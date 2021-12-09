@@ -1,0 +1,532 @@
+/*--------------------------------------estilos generales-----------------*/
+
+  *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+html{
+    font-size: 62.5%;
+}
+body{
+    background-image: url("../img/27743-madera.jpg");
+}
+
+a{
+  color: rgb(151, 150, 150);
+  text-decoration: none;
+}
+a:hover{
+  color: red;
+}
+.centrado{
+  text-align: center;
+}
+.c-gris{
+  color: rgb(151, 150, 150);}
+
+h2{
+  font-weight: bold;
+}
+h4{
+  color: white;
+  border-bottom: 1px solid rgb(214, 26, 26);
+  text-align: center;
+}
+
+/*--------------------------------------INDEX.HTML-----------------*/
+/*-------------------------------------nav--------------------------------------------*/
+.img-logo{
+    width: 5.5rem;
+    height: 4.4rem;
+}
+
+/*-------------------------------------cuerpo de la web-------------------------------------------*/
+/*----------------------------------grids------------------------------*/
+#grilla{
+  display: grid;
+  grid-template-areas: "uno uno uno uno"
+                        "dos dos dos aside"
+                        "tres tres tres tres"
+                        "cuatro cuatro cuatro cuatro"
+                        "footer footer footer footer";
+  grid-template-rows: 55.5rem 45rem 30rem 52rem 35rem;
+  grid-template-columns: auto;
+  row-gap: 2.5rem;
+  column-gap: 2rem;
+  height: 100vh;
+  justify-content: center;
+  padding-top: 3rem;
+}
+#grilla #uno{
+  grid-area: uno;
+}
+#grilla #dos{
+  grid-area: dos;
+}
+#grilla #tres{
+  grid-area: tres;
+  background-color: rgb(31, 30, 30);
+}
+#grilla #cuatro{
+grid-area:cuatro;
+}
+#grilla #cinco{
+grid-area:cinco;
+}
+#grilla aside{
+  grid-area: aside;
+}
+#grilla footer{
+  grid-area: footer;
+  background-color: rgb(31, 30, 30);
+  }
+  
+
+  /*----------------------------texto de los grids --------------------*/
+
+.encabezado-najucheddar{
+  min-width: 50rem;
+  padding: 2rem;
+  background-image: url(../img/naju-cheddar.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.encabezado-milanesa{
+  min-width: 50rem;
+  padding: 2rem;
+  background-image: url(../img/milanesa-menu.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.texto-uno{
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+  margin: 0.1rem 0;
+}
+
+.texto-dos{
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  font-family: 'Oswald', sans-serif;
+  margin: 0.1rem 0;
+}
+.texto-dos-rojo{
+  text-align: center;
+  color: rgb(214, 26, 26);
+  font-size: 3rem;
+  font-family: 'Oswald', sans-serif;
+  margin: 0.1rem 0;
+}
+
+.encabezado-vegana{
+  min-width: 50rem;
+  padding: 2rem;
+  background-image: url(../img/vegana.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.texto-tres{
+  text-align: center;
+  margin: 0.1rem 0;
+  color: white;
+  font-size: 3rem;
+  font-family: 'Oswald', sans-serif;
+}
+.texto-tres-rojo{
+  text-align: center;
+  color: rgb(214, 26, 26);
+  font-size: 2.6rem;
+  font-family: 'Oswald', sans-serif;
+}
+.encabezado-tres{
+  min-width: 50rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.texto-cuatro{
+  text-align: center;
+  font-size: 5rem;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+.encabezado-cuatro{
+  min-width: 50rem;
+  padding: 2rem;
+  background-image: url(../img/2-Pollo\ napo.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.texto-cinco{
+  text-align: center;
+  margin: 0.1 0;
+  font-size: 5rem;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+.texto-cinco-rojo{
+  text-align: center;
+  font-size: 4rem;
+  font-family: 'Oswald', sans-serif;
+  color: rgb(214, 26, 26);
+}
+/*----------------------------footer --------------------*/
+.footer-flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+
+}
+ .hijo-uno{
+  width: 30rem;
+  height: 30rem;
+}
+.hijo-dos{
+  width: 30rem;
+  height: 30rem;
+}
+svg{
+  width: 5rem;
+  height: 5rem;
+}
+.ul-horarios{
+  border-bottom: solid 0.8px rgb(151, 150, 150);
+  color:white;
+  font-size: 1rem;
+  font-weight: bold;
+  list-style: none;
+}
+/*----------------------------hasta aca estas reglas aplican a todos los footer--------------------*/
+
+.ul-horarios-rojo{
+  color:rgb(214, 26, 26);
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  left: 17rem;
+  bottom: 6.1rem;
+  list-style: none;
+}
+.entregas{
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgb(151, 150, 150);
+  position: relative;
+  bottom: 3rem;
+}
+.diseñado{
+  position: relative;
+  bottom: 4.9rem;
+  border-top:  red solid 1px;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+}
+.img-ig{
+  width: 5.5rem;
+  height: 5.5rem;
+  position: relative;
+  bottom: 10rem;
+}
+/*----------------------------MODIFICACIONES DE  CLASES DE BOOTSTRAP--------------------*/
+/*-------------------UL------------------------*/
+ol,
+ul {
+  padding-left:0rem;
+}
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+/*--------------------------------BURGERS.HTML--------------------*/
+/*----------------------------------grids-------------------------*/
+#grid-burgers{
+  display: grid;
+  grid-template-areas: " b1 b2"
+                        " b3 b4"
+                        "b5 b6 "
+                        "b7 b8"
+                        "b9 b9"
+                        "footer footer";
+  grid-template-columns: 60rem 60rem;
+  grid-template-rows:  53rem 53rem 53rem 53rem 24rem 35rem;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 3rem;
+}
+  /*----------------------------imagenes de los grids--------------------*/
+  .img-burgers-1{
+    width: 59.5rem;
+  height: 39.5rem;
+  }
+.img-burgers-2{
+  width: 59.5rem;
+  height: 39.5rem;
+}
+ /*----------------------------textos de los grids--------------------*/
+#grid-burgers #b1{
+  grid-area: b1;
+  background-color: rgb(0, 0, 0);
+  line-height: 0.3rem;
+} 
+
+#grid-burgers #b2{
+  grid-area: b2;
+  background-color: rgb(0, 0, 0);
+  line-height: 0.3rem;
+}
+#grid-burgers #b3{
+  grid-area: b3;
+  background-color: rgb(0, 0, 0);
+  line-height: 0.3rem;
+}
+#grid-burgers #b4{
+  grid-area: b4;
+  background-color: rgb(0, 0, 0);
+  line-height: 0.3rem;
+}
+#grid-burgers #b5{
+  grid-area: b5;
+  background-color: rgb(0, 0, 0);
+  line-height: 0.3rem;
+}
+#grid-burgers #b6{
+  grid-area: b6;
+  background-color: rgb(0, 0, 0);
+  line-height: 0.3rem;
+}
+#grid-burgers #b7{
+  grid-area: b7;
+  background-color: rgb(2, 2, 2);
+  line-height: 0.3rem;
+}
+#grid-burgers #b8{
+  grid-area: b8;
+  background-color: rgb(0, 0, 0);
+  line-height: 0.3rem;
+}
+#grid-burgers #b9{
+  grid-area: b9;
+  background-color: rgb(0, 0, 0);
+}
+#grid-burgers footer{
+  grid-area: footer;
+  background-color: rgb(31, 30, 30);
+}
+.h3-burgers{
+  text-align: center;
+  color: rgb(214, 26, 26);
+  font-family: 'Oswald', sans-serif;
+  padding-top: 1.5rem;
+}
+.p-burgers{
+  text-align: center;
+  color: rgb(228, 228, 228);
+  font-family: 'Oswald', sans-serif;
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+}
+#texto-b9{
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 5rem;
+  font-family: 'Oswald', sans-serif;
+}
+.extra-burgers{
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(214, 26, 26);
+  font-family: 'Oswald', sans-serif;
+}
+/*--------------------------------footer burgers.html--------------------*/
+.fuente-leyenda{
+  font-size: 1rem;
+}
+.ul-horarios-rojo-burgers{
+    color:rgb(214, 26, 26);
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    left: 17rem;
+    bottom: 5rem;
+    list-style: none;
+  }
+/*--------------------------------EXTRAS.HTML--------------*/
+ /*----------------------------grids--------------------*/
+#grid-extras{
+  display: grid;
+  grid-template-areas: "milanesa pollo "
+  "nuggets aros"
+  "footer footer";
+  grid-template-columns: 60rem 60rem;
+  grid-template-rows:  53rem 53rem 35rem;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 3rem;
+}
+#grid-extras #milanesa{
+  grid-area: milanesa;
+  background-color: black;
+  line-height: 0.3rem;
+}
+#grid-extras #nuggets{
+  grid-area: nuggets;
+  background-color: black;
+  line-height: 0.3rem;
+}
+#grid-extras #aros{
+  grid-area: aros;
+  background-color: black;
+  line-height: 0.3rem;
+}
+#grid-extras #pollo{
+  grid-area: pollo;
+  background-color: black;
+  line-height: 0.3rem;
+}
+#grid-extras footer{
+  grid-area: footer;
+  background-color: rgb(31, 30, 30)
+}
+ /*----------------------------imagenes de los grids--------------------*/
+.img-milanesa{
+width: 59.9rem;
+height:39.5rem ;
+}
+.img-nuggets{
+width:59.9rem ;
+height:39.5em ;
+}
+.img-aros{
+width:59.9rem ;
+height:39.5em ;
+}
+.img-pollo-criollo{
+width:59.9rem ;
+height:39.5rem ;
+}
+.ul-horarios-rojo-extras{
+  color:rgb(214, 26, 26);
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  left: 17rem;
+  bottom: 6.1rem;
+  list-style: none;
+}
+ /*----------------------------Responsive vista tablets-----------------------*/
+ /*----------------------------Burgers.html----------------------------------*/
+@media only screen and (min-width:680px) and (max-width:1023px){
+  #grid-burgers{
+    display: grid;
+    grid-template-areas:  "b1" 
+                          "b2"
+                          "b3"
+                          "b4"
+                          "b5"
+                          "b6"
+                          "b7"
+                          "b8"
+                          "b9" 
+                          "footer" 
+                          "footer";
+    grid-template-columns: 50rem;
+    grid-template-rows:  53rem 53rem 53rem 53rem 53rem 53rem 53rem 53rem 30rem 35rem;
+    column-gap: 2.5rem;
+    row-gap: 2.5rem;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 3rem;
+  }
+  .img-burgers-1{
+    width: 50rem;
+    height: 39.5rem;
+  }
+.img-burgers-2{
+    width: 50rem;
+    height: 39.5rem;
+  }
+  #grid-burgers #b9{
+    padding: 3rem;
+  }
+}
+
+
+
+
+
+
+ @media only screen and (max-width:450px){
+  #grilla{
+    display: grid;
+    grid-template-areas: "uno "
+                          "dos "
+                          "aside "
+                          "tres  "
+                          "cuatro "
+                          "footer";
+    grid-template-rows: 50rem 50rem 50rem 50rem 50rem 67rem ;
+    grid-template-columns: 30rem ;
+    row-gap: 2.5rem;
+    column-gap: 2rem;
+    height: 100vh;
+    justify-content: center;
+    padding-top: 3rem;
+  }
+  .encabezado-najucheddar{
+    min-width: 42rem;
+    
+  }
+  .encabezado-tres{
+    min-width: 42rem;
+  }
+ .encabezado-vegana {
+   min-width: 42rem;
+ }
+  .encabezado-milanesa{
+    min-width: 42rem;
+  }
+  .encabezado-tres{
+    min-width: 42rem;
+  }
+  .encabezado-cuatro{
+    min-width: 42rem;
+  }
+ }
